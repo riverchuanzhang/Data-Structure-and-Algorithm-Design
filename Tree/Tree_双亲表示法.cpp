@@ -19,7 +19,7 @@ typedef struct { //树结构
 	PTNode nodes[MAX_TREE_SIZE];
 	int r, n; //根的位置和节点数
 } PTree;
-//泽林
+
 //判断树是否是空树【turbo c里面实现的时候是用boolean true要用大写，包括 eclipse中：typedef char TElemType;  turbo c中是typedef TElemType char;】
 bool TreeEmpty(PTree T) {
 	if (T.n == 0)
@@ -108,7 +108,7 @@ void InsertChild(PTree &T, char p, int i, PTree c) {
   else   
     return '\0';    
 }    
-//大川
+
 void InitTree(PTree &T) {
 	T.n = 0;
 	T.r = 0;
@@ -149,9 +149,6 @@ PTNode * LeftChild(PTree &T, int cur_e) {
 	return NULL;
 }
 
-/*
-荣东
-*/
 
 //-----------------------
 /*
@@ -188,7 +185,6 @@ int *RightSibling(PTree T, PTNode cur_e) {
 	return p;
 }
 
-//启焕
 
 /** 弃用*/
 void CreateTree(PTree &T) {
@@ -255,7 +251,7 @@ void vi(TElemType c)
    printf("%c ",c);
 }
 
-//大康
+
 void ClearTree(PTree &T) {
 	if (TreeEmpty(T))
 		return;
